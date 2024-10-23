@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TextView para la cuenta atrás antes de empezar -->
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:text="3"
+        android:visibility="gone"/> <!-- Comienza oculto hasta que la cuenta atrás inicie -->
+
+    <!-- TextView para el temporizador de juego -->
+    <TextView
+        android:id="@+id/gameTimerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:text="Tiempo restante: 10"
+        android:visibility="gone"/> <!-- Comienza oculto hasta que el juego inicie -->
+
+    <!-- Layout horizontal para los jugadores -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Lado Izquierdo del Jugador 1 -->
+        <LinearLayout
+            android:id="@+id/player1Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFCDD2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/player1Image"
+                android:layout_width="159dp"
+                android:layout_height="362dp"
+                android:contentDescription="Player 1 Character" />
+
+            <TextView
+                android:id="@+id/player1Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <!-- Lado Derecho del Jugador 2 -->
+        <LinearLayout
+            android:id="@+id/player2Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#BBDEFB"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/player2Image"
+                android:layout_width="159dp"
+                android:layout_height="362dp"
+                android:contentDescription="Player 2 Character" />
+
+            <TextView
+                android:id="@+id/player2Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

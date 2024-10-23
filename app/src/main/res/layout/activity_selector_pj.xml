@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/bckselector"
+    android:padding="16dp">
+
+    <!-- Jugador 1 selección -->
+    <LinearLayout
+        android:id="@+id/player1Selection"
+        android:layout_width="0dp"
+        android:layout_height="731dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borde"
+            android:text="Jugador 1"
+            android:fontFamily="@font/fuenteletra"
+            android:textColor="@color/naranjadbz"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/gokuPlayer1"
+
+            android:background="@drawable/borde"
+            android:layout_width="136dp"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:contentDescription="Goku"
+            android:src="@drawable/goku" />
+
+        <ImageView
+            android:id="@+id/vegetaPlayer1"
+            android:layout_width="136dp"
+            android:layout_height="146dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde"
+            android:contentDescription="Vegeta"
+            android:src="@drawable/vegeta" />
+
+        <!-- Botón para confirmar -->
+        <Button
+            android:id="@+id/player1Ready"
+            android:layout_width="112dp"
+            android:layout_height="59dp"
+            android:fontFamily="@font/fuenteletra"
+            android:textSize="30dp"
+            android:background="@drawable/borde"
+            android:textColor="@color/naranjadbz"
+            android:text="Listo" />
+    </LinearLayout>
+
+    <!-- Jugador 2 selección -->
+    <LinearLayout
+        android:id="@+id/player2Selection"
+        android:layout_width="0dp"
+        android:layout_height="731dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borde"
+            android:text="Jugador 2"
+            android:fontFamily="@font/fuenteletra"
+            android:textColor="@color/naranjadbz"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/gokuPlayer2"
+            android:layout_width="136dp"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde"
+            android:contentDescription="Goku"
+            android:src="@drawable/goku" />
+
+        <ImageView
+            android:id="@+id/vegetaPlayer2"
+            android:layout_width="136dp"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:contentDescription="Vegeta"
+            android:background="@drawable/borde"
+            android:src="@drawable/vegeta" />
+
+        <!-- Botón para confirmar -->
+        <Button
+            android:id="@+id/player2Ready"
+            android:fontFamily="@font/fuenteletra"
+            android:layout_width="112dp"
+            android:layout_height="59dp"
+            android:textColor="@color/naranjadbz"
+            android:background="@drawable/borde"
+            android:textSize="30dp"
+            android:text="Listo" />
+    </LinearLayout>
+
+</LinearLayout>
